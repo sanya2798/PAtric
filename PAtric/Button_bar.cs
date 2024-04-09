@@ -31,7 +31,6 @@ namespace PAtric
 
         private void Button_bar_Load(object sender, EventArgs e)
         {
-            Console.WriteLine(userCollapse);
         }
 
         private bool OpenButtonContainer(Panel container, Timer timer, bool collapse)

@@ -37,16 +37,17 @@
             // panelMenuButton
             // 
             this.panelMenuButton.Location = new System.Drawing.Point(3, 3);
-            this.panelMenuButton.MinimumSize = new System.Drawing.Size(185, 720);
+            this.panelMenuButton.MaximumSize = new System.Drawing.Size(185, 800);
+            this.panelMenuButton.MinimumSize = new System.Drawing.Size(185, 800);
             this.panelMenuButton.Name = "panelMenuButton";
-            this.panelMenuButton.Size = new System.Drawing.Size(185, 720);
+            this.panelMenuButton.Size = new System.Drawing.Size(185, 800);
             this.panelMenuButton.TabIndex = 1;
             // 
             // panelDesctop
             // 
             this.panelDesctop.Location = new System.Drawing.Point(194, 3);
             this.panelDesctop.Name = "panelDesctop";
-            this.panelDesctop.Size = new System.Drawing.Size(679, 720);
+            this.panelDesctop.Size = new System.Drawing.Size(679, 800);
             this.panelDesctop.TabIndex = 2;
             // 
             // flowLayoutPanel1
@@ -55,14 +56,14 @@
             this.flowLayoutPanel1.Controls.Add(this.panelDesctop);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(880, 730);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(880, 808);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // Main_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 751);
+            this.ClientSize = new System.Drawing.Size(897, 829);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Main_menu";

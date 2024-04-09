@@ -116,10 +116,10 @@
             this.sidebarContainer.Controls.Add(this.BookkeepingContainer);
             this.sidebarContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sidebarContainer.Location = new System.Drawing.Point(0, 0);
-            this.sidebarContainer.MaximumSize = new System.Drawing.Size(170, 709);
-            this.sidebarContainer.MinimumSize = new System.Drawing.Size(40, 600);
+            this.sidebarContainer.MaximumSize = new System.Drawing.Size(170, 800);
+            this.sidebarContainer.MinimumSize = new System.Drawing.Size(40, 800);
             this.sidebarContainer.Name = "sidebarContainer";
-            this.sidebarContainer.Size = new System.Drawing.Size(169, 681);
+            this.sidebarContainer.Size = new System.Drawing.Size(169, 800);
             this.sidebarContainer.TabIndex = 2;
             // 
             // UserContainer
@@ -594,10 +594,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(169, 681);
+            this.ClientSize = new System.Drawing.Size(169, 801);
             this.Controls.Add(this.sidebarContainer);
-            this.MaximumSize = new System.Drawing.Size(2000, 720);
-            this.MinimumSize = new System.Drawing.Size(185, 600);
+            this.MaximumSize = new System.Drawing.Size(185, 840);
+            this.MinimumSize = new System.Drawing.Size(185, 840);
             this.Name = "Button_bar";
             this.Text = "Button_bar";
             this.Load += new System.EventHandler(this.Button_bar_Load);

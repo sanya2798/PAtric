@@ -46,24 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Button_bar.cs">
+    <Compile Include="Forms\Button_bar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Button_bar.Designer.cs">
+    <Compile Include="Forms\Button_bar.Designer.cs">
       <DependentUpon>Button_bar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main_menu.cs">
+    <Compile Include="Forms\Main_menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main_menu.Designer.cs">
+    <Compile Include="Forms\Main_menu.Designer.cs">
       <DependentUpon>Main_menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Button_bar.resx">
+    <EmbeddedResource Include="Forms\Button_bar.resx">
       <DependentUpon>Button_bar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main_menu.resx">
+    <EmbeddedResource Include="Forms\Main_menu.resx">
       <DependentUpon>Main_menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -87,6 +87,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sprites\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

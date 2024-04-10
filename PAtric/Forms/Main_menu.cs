@@ -14,6 +14,7 @@ namespace PAtric
     {
         // OBJECTS
         private Form activeForm;
+        
 
         // CONTROLL
         bool sidebarExpand, homeCollapse, saleCollapse;
@@ -28,13 +29,12 @@ namespace PAtric
         {
             OpenChildForm(this.panelMenuButton, new Button_bar(this));
         }
-        private void OpenChildForm(Panel panel, Form childForm) //, object btnSender
+        public void OpenChildForm(Panel panel, Form childForm) //, object btnSender
         {
             if (activeForm != null)
             {
                 activeForm.Close();
             }
-
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;

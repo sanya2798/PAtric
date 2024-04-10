@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PAtric.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -98,7 +99,7 @@ namespace PAtric
         private void buttonHome_Click(object sender, EventArgs e)
         {
             HomeTimer.Start();
-            //OpenChildForm(mainMenu.panelDesctop, new Repair_work());
+            mainMenu.OpenChildForm(mainMenu.panelDesctop, new Main_win());
         }
         private void buttonRegistration_Click(object sender, EventArgs e)
         {

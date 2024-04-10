@@ -127,12 +127,12 @@
     <value>192, 13</value>
   </metadata>
   <metadata name="LaboratoryTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 50</value>
+    <value>21, 49</value>
   </metadata>
   <metadata name="WarehouseTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>105, 50</value>
   </metadata>
   <metadata name="BookkeepingTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>193, 50</value>
+    <value>262, 48</value>
   </metadata>
 </root>

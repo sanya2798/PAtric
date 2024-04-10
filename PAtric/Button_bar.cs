@@ -43,12 +43,10 @@ namespace PAtric
                 {
                     collapse = false;
                     timer.Stop();
-                    Console.WriteLine("Step 2: " + collapse);
-                    return false;
+                    return collapse;
                 }
-                else return true;
+                else return collapse;
             }
-
             else
             {
                 container.Height -= 10;
@@ -57,9 +55,9 @@ namespace PAtric
                 {
                     collapse = true;
                     timer.Stop();
-                    return true;
+                    return collapse;
                 }
-                else return false;
+                else return collapse;
             }
         }
 

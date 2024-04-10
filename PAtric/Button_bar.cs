@@ -1,5 +1,4 @@
-﻿using PAtric.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +31,23 @@ namespace PAtric
 
         private void Button_bar_Load(object sender, EventArgs e)
         {
+            OpenChildForm(mainMenu.panelDesctop, new Repair_work());
+        }
+        private void OpenChildForm(Panel panel, Form childForm) //, object btnSender
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel.Controls.Add(childForm);
+            panel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
         private bool OpenButtonContainer(Panel container, Timer timer, bool collapse)
@@ -93,33 +109,33 @@ namespace PAtric
         private void buttonUser_Click(object sender, EventArgs e)
         {
             UserTimer.Start();
-            //OpenChildForm(mainMenu.panelDesctop, new Repair_work());
+            OpenChildForm(mainMenu.panelDesctop, new Repair_work());
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
             HomeTimer.Start();
-            mainMenu.OpenChildForm(mainMenu.panelDesctop, new Main_win());
+            OpenChildForm(mainMenu.panelDesctop, new Repair_work());
         }
         private void buttonRegistration_Click(object sender, EventArgs e)
         {
             RegistrationTimer.Start();
-            //OpenChildForm(mainMenu.panelDesctop, new Repair_work());
+            OpenChildForm(mainMenu.panelDesctop, new Repair_work());
         }
         private void buttonLaboratory_Click(object sender, EventArgs e)
         {
             LaboratoryTimer.Start();
-            //OpenChildForm(mainMenu.panelDesctop, new Repair_work());
+            OpenChildForm(mainMenu.panelDesctop, new Repair_work());
         }
         private void buttonWarehouse_Click(object sender, EventArgs e)
         {
             WarehouseTimer.Start();
-            //OpenChildForm(mainMenu.panelDesctop, new Repair_work());
+            OpenChildForm(mainMenu.panelDesctop, new Repair_work());
         }
         private void buttonBookkeeping_Click(object sender, EventArgs e)
         {
             BookkeepingTimer.Start();
-            //OpenChildForm(mainMenu.panelDesctop, new Repair_work());
+            OpenChildForm(mainMenu.panelDesctop, new Repair_work());
         }
     }
 }

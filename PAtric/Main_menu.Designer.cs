@@ -46,29 +46,34 @@
             // panelDesctop
             // 
             this.panelDesctop.Location = new System.Drawing.Point(194, 3);
-            this.panelDesctop.MaximumSize = new System.Drawing.Size(837, 800);
+            this.panelDesctop.MaximumSize = new System.Drawing.Size(1800, 868);
             this.panelDesctop.MinimumSize = new System.Drawing.Size(837, 800);
             this.panelDesctop.Name = "panelDesctop";
-            this.panelDesctop.Size = new System.Drawing.Size(837, 800);
+            this.panelDesctop.Size = new System.Drawing.Size(1587, 800);
             this.panelDesctop.TabIndex = 2;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.panelMenuButton);
             this.flowLayoutPanel1.Controls.Add(this.panelDesctop);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1034, 808);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1784, 829);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // Main_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1058, 829);
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.ClientSize = new System.Drawing.Size(1784, 829);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MinimumSize = new System.Drawing.Size(1800, 868);
             this.Name = "Main_menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Система управления парикмахерской";
             this.Load += new System.EventHandler(this.Main_menu_Load);
             this.flowLayoutPanel1.ResumeLayout(false);

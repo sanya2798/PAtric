@@ -1,5 +1,4 @@
-﻿using PAtric.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,7 +16,7 @@ namespace PAtric
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main_win());
+            Application.Run(new Main_menu());
         }
     }
 }

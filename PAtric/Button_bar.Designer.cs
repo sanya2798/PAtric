@@ -69,7 +69,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonRentPayment = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.buttonBookkeeping = new System.Windows.Forms.Button();
             this.UserTimer = new System.Windows.Forms.Timer(this.components);
@@ -521,22 +521,22 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.button2);
+            this.panel5.Controls.Add(this.buttonRentPayment);
             this.panel5.Location = new System.Drawing.Point(0, 40);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(164, 40);
             this.panel5.TabIndex = 4;
             // 
-            // button2
+            // buttonRentPayment
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(164, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Вкладка 1";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonRentPayment.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonRentPayment.Location = new System.Drawing.Point(0, 0);
+            this.buttonRentPayment.Name = "buttonRentPayment";
+            this.buttonRentPayment.Size = new System.Drawing.Size(164, 40);
+            this.buttonRentPayment.TabIndex = 1;
+            this.buttonRentPayment.Text = "Оплата аренды";
+            this.buttonRentPayment.UseVisualStyleBackColor = true;
+            this.buttonRentPayment.Click += new System.EventHandler(this.buttonRentPayment_Click);
             // 
             // panel6
             // 
@@ -642,7 +642,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonRentPayment;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button buttonBookkeeping;
         private System.Windows.Forms.Panel panel8;

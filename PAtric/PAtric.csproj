@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Button_bar.cs">
+    <Compile Include="Button_bar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Button_bar.Designer.cs">
+    <Compile Include="Button_bar.Designer.cs">
       <DependentUpon>Button_bar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form1.cs">
+    <Compile Include="Forms\RentPayment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\RentPayment.Designer.cs">
+      <DependentUpon>RentPayment.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Main_menu.cs">
       <SubType>Form</SubType>
@@ -72,11 +72,11 @@
     <Compile Include="Forms\Repair_work.Designer.cs">
       <DependentUpon>Repair_work.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\Button_bar.resx">
+    <EmbeddedResource Include="Button_bar.resx">
       <DependentUpon>Button_bar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\RentPayment.resx">
+      <DependentUpon>RentPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Main_menu.resx">
       <DependentUpon>Main_menu.cs</DependentUpon>

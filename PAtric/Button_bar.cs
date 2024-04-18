@@ -137,5 +137,10 @@ namespace PAtric
             BookkeepingTimer.Start();
             OpenChildForm(mainMenu.panelDesctop, new Repair_work());
         }
+
+        private void buttonRentPayment_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(mainMenu.panelDesctop, new RentPayment());
+        }
     }
 }

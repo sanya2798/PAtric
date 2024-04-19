@@ -32,11 +32,15 @@ namespace PAtric
             {
                 buttonSelectFile.Enabled = true;
                 textBoxPath.Enabled = true;
+                buttonPrintOrder.Enabled = true;
+                buttonPayment.Enabled = false;
             }
             else
             {
                 buttonSelectFile.Enabled = false;
                 textBoxPath.Enabled = false;
+                buttonPrintOrder.Enabled = false;
+                buttonPayment.Enabled = true;
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -54,6 +58,7 @@ namespace PAtric
 
                 //Console.WriteLine(filePath);
             }
+            buttonPayment.Enabled = true;
         }
 
         private void radioButtonFL_CheckedChanged(object sender, EventArgs e)
@@ -64,6 +69,11 @@ namespace PAtric
         private void radioButtonUL_CheckedChanged(object sender, EventArgs e)
         {
             CheckFL();
+        }
+
+        private void buttonPrintOrder_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

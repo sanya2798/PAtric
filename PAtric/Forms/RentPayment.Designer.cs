@@ -78,6 +78,7 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label15 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.buttonPrintOrder = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -560,11 +561,22 @@
             this.textBox2.Size = new System.Drawing.Size(427, 86);
             this.textBox2.TabIndex = 13;
             // 
+            // buttonPrintOrder
+            // 
+            this.buttonPrintOrder.Location = new System.Drawing.Point(577, 54);
+            this.buttonPrintOrder.Name = "buttonPrintOrder";
+            this.buttonPrintOrder.Size = new System.Drawing.Size(84, 23);
+            this.buttonPrintOrder.TabIndex = 14;
+            this.buttonPrintOrder.Text = "Печать чека";
+            this.buttonPrintOrder.UseVisualStyleBackColor = true;
+            this.buttonPrintOrder.Click += new System.EventHandler(this.buttonPrintOrder_Click);
+            // 
             // RentPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(821, 761);
+            this.Controls.Add(this.buttonPrintOrder);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.dataGridView1);
@@ -643,5 +655,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button buttonPrintOrder;
     }
 }
